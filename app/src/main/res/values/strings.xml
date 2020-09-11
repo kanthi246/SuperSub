@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SuperSub</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="desc">Kotlin is a statically typed, general-purpose programming language developed by JetBrains, that has built world-class IDEs like IntelliJ IDEA, PhpStorm, Appcode, etc. It was first introduced by JetBrains in 2011 and a new language for the JVM. Kotlin is object-oriented language, and a “better language” than Java, but still be fully interoperable with Java code. Kotlin is sponsored by Google, announced as one of the official languages for Android Development in 2017. Advantages of Kotlin language.</string>
+    <string name="pro"> Pro </string>
+    <string name="_1_00">1:00</string>
+    <string name="feed">Feed</string>
+    <string name="exercise">Exercise</string>
+    <string name="nodata">No Data Found</string>
+    <string name="sets">\ Sets \</string>
+    <string name="reps">\ Reps\</string>
+    <string name="search">search</string>
+    <string name="notification">notification</string>
+    <string name="bookmark">bookmark</string>
+    <string name="infographics">INFOGRAPHICS</string>
+    <string name="repetitions">Repetitions</string>
+    <string name="equipements">Equipments</string>
+</resources>

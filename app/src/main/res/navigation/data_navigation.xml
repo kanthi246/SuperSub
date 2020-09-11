@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/data_navigation"
+    app:startDestination="@id/exploreFragment">
+
+    <fragment
+        android:id="@+id/exploreFragment"
+        android:name="com.example.supersub.Views.ExploreFragment"
+        android:label="@string/feed"
+        tools:layout="@layout/fragment_explore">
+
+        <action
+            android:id="@+id/action_exploreFragment_to_exerciseFragment"
+            app:destination="@id/exerciseFragment"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/exerciseFragment"
+        android:name="com.example.supersub.Views.ExerciseFragment"
+        android:label="@string/exercise"
+        tools:layout="@layout/fragment_exercise">
+        <argument
+            android:name="exerciseid"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_exerciseFragment_to_exploreFragment"
+            app:destination="@id/exploreFragment"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popUpTo="@id/exploreFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="imageurl"
+            app:argType="string" />
+    </fragment>
+</navigation>

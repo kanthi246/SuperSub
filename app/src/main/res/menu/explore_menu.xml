@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/search"
+        android:id="@+id/menu_search"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="ifRoom"/>
+    <item android:title="@string/notification"
+        android:id="@+id/menu_notification"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_notifications"/>
+</menu>
