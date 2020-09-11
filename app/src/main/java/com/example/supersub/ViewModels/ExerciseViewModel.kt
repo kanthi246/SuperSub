@@ -33,9 +33,11 @@ class ExerciseViewModel(application: Application):BaseViewModel(application) {
            SuperSubApiService.getClient.getExercise(id).enqueue(
                object :Callback<Exercise>{
                    override fun onResponse(call: Call<Exercise>, response: Response<Exercise>) {
-                       _exerciseresponse.value=response.body()
-                       loaderror.value=false
-                       loading.value=false
+                       if (response.isSuccessful){
+                           _exerciseresponse.value=response.body()
+                           loaderror.value=false
+                           loading.value=false
+                       }
                    }
 
                    override fun onFailure(call: Call<Exercise>, t: Throwable) {

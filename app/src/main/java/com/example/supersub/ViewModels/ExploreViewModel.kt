@@ -37,9 +37,11 @@ class ExploreViewModel(application: Application):BaseViewModel(application) {
             SuperSubApiService.getClient.getExplore()
                 .enqueue(object :Callback<Explore>{
                     override fun onResponse(call: Call<Explore>, response: Response<Explore>) {
-                        _exploreresponse.value=response.body()
-                        loaderror.value=false
-                        loading.value=false
+                        if(response.isSuccessful){
+                            _exploreresponse.value=response.body()
+                            loaderror.value=false
+                            loading.value=false
+                        }
                     }
 
                     override fun onFailure(call: Call<Explore>, t: Throwable) {
